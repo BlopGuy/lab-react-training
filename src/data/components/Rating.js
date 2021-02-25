@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Rating extends Component {
-  render() {
-    let rating = this.props.children;
-    return (
-      <div className="Rating">
-        {rating >= 0.5 ? '★' : '☆'}
-        {rating >= 1.5 ? '★' : '☆'}
-        {rating >= 2.5 ? '★' : '☆'}
-        {rating >= 3.5 ? '★' : '☆'}
-        {rating >= 4.5 ? '★' : '☆'}
-      </div>
-    )
-  }
+function Rating() {
+  let rating = this.props.children;
+  return (
+    <div className="Rating">
+      {rating >= 0.5 ? '★' : '☆'}
+      {rating >= 1.5 ? '★' : '☆'}
+      {rating >= 2.5 ? '★' : '☆'}
+      {rating >= 3.5 ? '★' : '☆'}
+      {rating >= 4.5 ? '★' : '☆'}
+    </div>
+  )
 }
 
 export default Rating;

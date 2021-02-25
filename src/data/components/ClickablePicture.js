@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 
 class ClickablePicture extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      isClicked: false
-    }
-    this.handleClick = this.handleClick.bind(this);
+  state = {
+    isClicked: false
   }
-  handleClick() {
+
+  handleClick = () => {
     this.setState(prevState => ({
       isClicked: !prevState.isClicked
     }))

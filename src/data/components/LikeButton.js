@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class LikeButton extends Component {
-
     state = {
         bgArray: ['purple', 'blue', 'green', 'yellow', 'orange', 'red'],
         likeNumber: 0

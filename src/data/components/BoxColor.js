@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class BoxColor extends Component {
-  render() {
+function BoxColor() {
     let { r, g, b } = this.props;
     let hexa = '#'
       + ('0' + r.toString(16)).substr(-2)
@@ -21,6 +20,6 @@ class BoxColor extends Component {
       </div>
     )
   }
-}
+
 
 export default BoxColor;
